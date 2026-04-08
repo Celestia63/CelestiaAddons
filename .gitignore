@@ -45,3 +45,8 @@ bin/
 
 # Fabric Loom
 .loomcache/
+
+# Debug and build logs
+build_*.txt
+build_errors_*.txt
+BUILD_FIX_SUMMARY.md

@@ -92,7 +92,7 @@ public class PlayerEspFeature extends Feature {
         int screenHeight = mc.getWindow().getScaledHeight();
 
         // Calculate screen position of player
-        net.minecraft.util.math.Vec3d playerPos = player.getPos();
+        net.minecraft.util.math.Vec3d playerPos = new net.minecraft.util.math.Vec3d(player.getX(), player.getY(), player.getZ());
         net.minecraft.util.math.Vec3d cameraPos = mc.gameRenderer.getCamera().getPos();
 
         // Simple tracer: line from bottom center of screen to player position

@@ -11,7 +11,7 @@ public class KeyBindings {
             "key.celestiaaddons.open_gui",
             InputUtil.Type.KEYSYM,
             GLFW.GLFW_KEY_O,
-            "category.celestiaaddons"
+            KeyBinding.Category.MISC
         )
     );
 }

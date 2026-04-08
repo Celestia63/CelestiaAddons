@@ -49,7 +49,8 @@ The built JAR will be in `build/libs/`.
 
 ## Usage
 
-- Press the designated key (configurable) to open the CelestiaAddons GUI
+- Press the `O` key to open the CelestiaAddons GUI
+- Or use `/ca gui` or `/celestiaaddons` in chat
 - Enable/disable features as needed
 - Configure settings for optimal performance
 

@@ -1,7 +1,9 @@
 package com.celestia.addons;
 
+import com.celestia.addons.client.KeyBindings;
 import com.celestia.addons.command.CelestiaCommands;
 import com.celestia.addons.feature.FeatureManager;
+import com.celestia.addons.gui.CelestiaScreen;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.minecraft.client.MinecraftClient;
@@ -18,15 +20,20 @@ public class CelestiaAddonsClient implements ClientModInitializer {
         
         // Register commands
         CelestiaCommands.register();
-        
-        // Register client tick event for any global mod-level tick handling
+
+        // Register client tick event for GUI keybind
         ClientTickEvents.END_CLIENT_TICK.register(this::onClientTick);
         
         System.out.println("[CelestiaAddons] Client mod initialized successfully");
     }
     
     private void onClientTick(MinecraftClient mc) {
-        // Individual features handle their own tick logic via ClientTickEvents
-        // This is just for any global mod-level tick handling if needed
+        if (mc.player == null) {
+            return;
+        }
+
+        if (KeyBindings.OPEN_GUI.wasPressed() && mc.currentScreen == null) {
+            mc.setScreen(new CelestiaScreen(FeatureManager.getInstance()));
+        }
     }
 }

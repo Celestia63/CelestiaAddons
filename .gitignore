@@ -1,0 +1,47 @@
+# Gradle
+.gradle/
+build/
+gradle.properties
+gradle-wrapper.jar
+gradle-wrapper.properties
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# VS Code
+.vscode/
+
+# Minecraft
+run/
+logs/
+crash-reports/
+screenshots/
+
+# Fabric
+fabric.mod.json.bak
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+
+# Build outputs
+out/
+bin/
+*.jar
+!gradle-wrapper.jar
+
+# Fabric Loom
+.loomcache/

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "celestiaaddons",
+  "version": "${version}",
+  "name": "CelestiaAddons",
+  "description": "Celestia's Addon Mod for 1.21.x",
+  "authors": [
+    "Celestia63"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/Celestia63/CelestiaAddons"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/celestiaaddons/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.celestia.addons.CelestiaAddonsClient"
+    ],
+    "main": [
+      "com.celestia.addons.CelestiaAddons"
+    ]
+  },
+  "mixins": [
+    "celestiaaddons.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

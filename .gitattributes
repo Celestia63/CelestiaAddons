@@ -1,0 +1,13 @@
+* text=auto
+*.java text eol=lf
+*.kt text eol=lf
+*.gradle text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.bat text eol=crlf
+*.sh text eol=lf
+/build/** linguist-generated=true
+/gradle/** linguist-generated=true
+/*.iml linguist-generated=true

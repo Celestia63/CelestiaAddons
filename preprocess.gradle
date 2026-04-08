@@ -1,0 +1,6 @@
+// Preprocess Gradle script for project-specific build fixes.
+// Add custom pre-processing or build hooks here if needed.
+
+def preprocess() {
+    // no-op placeholder
+}
